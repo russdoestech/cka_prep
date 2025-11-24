@@ -58,19 +58,19 @@ With the container up and running, I experimented with some docker commands to p
 
 Cleaning up for this project involved stopping the container...
 
-![alt text](./images/image10.png)
+![alt text](image.png)
 
 Confirming the container had exited...
 
-![alt text](./images/image-11.png)
+![alt text](image-1.png)
 
 And then removing the container...
 
-![alt text](./images/image-12.png)
+![alt text](image-2.png)
 
 Confirming the container has been deleted.
 
-![alt text](./images/image-13.png)
+![alt text](image-3.png)
 
 I could also have force stopped and removed the container all at once using 'docker rm -f container_name' but I preferred to observe exactly what is taking place after running the above commands, for the time being.
 
