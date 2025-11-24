@@ -3,7 +3,7 @@
 ## Overview
 
 In this project I'll be setting up a multi stage docker build:
-* Installing the prerequisite apps (Docker Desktop)
+
 * Cloning a github repo containing a web app
 * Creating a Dockerfile
 * Building the Docker image
@@ -13,13 +13,13 @@ In this project I'll be setting up a multi stage docker build:
 
 ## Details
 
-To get started I installed the Docker Desktop app onto my Windows 11 system from https://www.docker.com/products/docker-desktop/ and signed into the app.
 
-Then I opened PowerShell and used the 'git clone' command to download a webapp from GitHub.
+
+Used the 'git clone' command to download a webapp from GitHub.
 
 Next, I cd'ed into the web app directory, and created a Dockerfile, and populated the Dockerfile with the relevant details to use an Alpine linux image & install nginx.
 
-with the Dockerfile populated, I next ran 'docker build' to build the docker image using the application code and the Dockerfile.
+With the Dockerfile populated, I next ran 'docker build' to build the docker image using the application code and the Dockerfile.
 
 ![alt text](./images/image.png)
 
@@ -31,11 +31,11 @@ Next, I signed into Docker Hub (https://hub.docker.com) and created a new public
 
 ![alt text](./images/image-2.png)
 
-The from the PowerShell command line, I signed into docker, tagged the app with the 'latest' tag, and pushed it to my 'russryness/todoapp' repository.
+Then, from the PowerShell command line, I signed into docker, tagged the local container with the name of my remote repository, and pushed it to my 'russryness/todoapp' repository.
 
 ![alt text](./images/image-3.png)
 
-I then ran the container on my localsytem by issueing the 'docker run' command to redirect the localhost port 3000 to port 80
+I ran the container on my localsystem by issueing the 'docker run' command to redirect the localhost port 3000 to port 80
 
 ![alt text](./images/image-4.png)
 
@@ -76,12 +76,12 @@ I could also have force stopped and removed the container all at once using 'doc
 
 ## Final Thoughts
 
-This was a simple, strait-forward lab to familiarize myself with Docker and the BUILD, SHIP, RUN process it uses. I'll be using Docker a lot more in additional labs as I continue to learn Docker and Kubernetes.
+This was a simple, strait-forward lab to re-familiarize myself with Docker and the BUILD, SHIP, RUN process it uses. I'll be using Docker a lot more in additional labs as I continue to learn Docker and Kubernetes.
 
 
 ## Acknowledgements
 
-This is the first lab in Piyush Sachdeva's Certified Kubernetes Course. Props to Piyush!
+This is the second lab in Piyush Sachdeva's Certified Kubernetes Course. Props to Piyush!
 
 YouTube: https://www.youtube.com/playlist?list=PLl4APkPHzsUUOkOv3i62UidrLmSB8DcGC
 
